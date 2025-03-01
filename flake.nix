@@ -35,6 +35,12 @@
       url = "github:yetone/avante.nvim";
       flake = false;
     };
+　　remark-markdown-unist = if builtins.pathExists ./remark-markdown-unist
+      then ./remark-markdown-unist
+      else {
+        url = "github:ryotarofr/remark-markdown-unist";
+        flake = false;
+    };
   };
 
   outputs =
